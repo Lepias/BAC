@@ -66,12 +66,6 @@ export default BAC = () => {
           onChange={setTime}
         />
         {/* Select gender */}
-        {/* <Text style={Styles.label} >Choose gender</Text>
-        <Text style={Styles.label}>Female
-          <Switch style={Styles.switch}
-            value={isMale}
-            onValueChange={toggleIsChecked}
-          /> Male</Text> */}
 
 <RadioButton.Group onValueChange={newValue=>setRadio(newValue)} value={radio}>
           <View style={Styles.radioStyle}>
@@ -97,53 +91,3 @@ export default BAC = () => {
 
 
 
-
-/* 
-  
-  
-    return (
-      <div>
-        <h1>Beermeter</h1>
-        <p>This application is alcometer that estimates the level of alcohol in ones system <br /> It's calculated with the persons weight, time passed and the amount of servings consumed.</p>
-        <form onSubmit={Beermeter}>
-          <div>
-  
-            <div>
-              <label>Weight</label>
-              <input type="number" value={weight} onChange={(e) => setWeight(e.target.value)} />
-            </div>
-            <div>
-              <label>Time passed</label>
-              <select onChange={(e) => setTime(e.target.value)}>
-                <option value="1">1</option>
-                <option value="7">7</option>
-              
-              </select>
-            </div>
-            <label>Beer</label>
-           
-            <select onChange={(e) => setServing(e.target.value)}>
-              <option type="number" value="3">3</option>
-      
-            </select>
-          </div>
-          <div>
-          
-            <label>Gender</label>
-            <label><input type="radio" label="male" checked={isMale} defaultChecked onChange={(e) => setIsMale(e.target.value)} />Male</label>
-            <label><input type="radio" label="female" checked={!isMale} onChange={(e) => setIsMale(!e.target.value)} />Female</label>
-          </div>
-       
-          <button>Calculate</button>
-        
-          <div>
-            <label>Amount of alcohol in the system:</label>
-            <output>{result}</output>
-          </div>
-  
-        </form>
-  
-      </div>
-    );
-  
- */
